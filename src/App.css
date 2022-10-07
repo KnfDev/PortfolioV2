@@ -54,7 +54,7 @@
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .expand:after {
@@ -141,8 +141,9 @@
 .skill {
   background-color: white;
   border: 0.1vw solid #64646c;
-  width: 100px;
-  margin: 50px 0;
+  width: 50%;
+  margin: 25px 0;
+  padding: -0px;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
 }
@@ -207,7 +208,7 @@
   }
 
   .skill {
-    width: 50%;
+    width: 75%;
   }
 
   .projectDesc{
