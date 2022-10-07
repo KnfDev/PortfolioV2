@@ -3,6 +3,7 @@ import Resume from "./images/Resume.pdf";
 import LeagueTrack from "./images/LeagueTrack.png";
 import Rest from "./images/RestaurantLanding.png";
 import Study from "./images/Study.png";
+import mario from "./images/mario.png"
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           </span>
         </div>
       </div>
+                {/* <img className="mario" src={mario}/> */}
       <header className="App-header">
         <div className="row project1">
           <div className="col-12 col-sm-12 col-md-9 col-lg-7 col-xl-7">
