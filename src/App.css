@@ -56,7 +56,7 @@
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .expand:after {
@@ -238,7 +238,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 8000px) {
+@media screen and (max-width: 850px) {
   .projectDesc{
     font-size: 16px;
     display:block;
@@ -254,7 +254,7 @@ button:hover {
     font-size: 14px;
   }
   .projectDesc {
-    font-size: 8px;
+    font-size: 12px;
     display: block;
   }
 }

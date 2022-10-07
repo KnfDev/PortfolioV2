@@ -49,10 +49,10 @@ function App() {
                 Icons also pulled from Riot API. API key is temporary so needs
                 to be updated.
               </p>
-              <a>
+              <a href="https://github.com/KnfDev/riot-stats-clone">
                 <button>Github</button>
               </a>
-              <button>Demo</button>
+              <button href="https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg">Demo</button>
               <div className="row spacer">
                 <img
                   className="col-6 col-sm-6 col-m-6 projectSkill"
