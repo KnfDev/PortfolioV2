@@ -1,9 +1,7 @@
-html {
-  background-color: #000000;
-}
 
-.App {
+.container-fluid {
   text-align: center;
+  /* min-width: 100%; */
   background-color: #19202b;
 }
 
@@ -12,23 +10,6 @@ html {
   padding: 30px 0;
   align-content: center;
   justify-content: space-around;
-  /* background-image: linear-gradient(
-    to right,
-    #19202b,
-    #19202b,
-    #19202b,
-    #19202b,
-    #64646c,
-    #19202b,
-    #19202b,
-    #19202b,
-    #19202b,
-    #64646c,
-    #19202b,
-    #19202b,
-    #19202b,
-    #19202b
-  ); */
   height: 45px;
   font-size: 18px;
   display: flex;
@@ -63,7 +44,7 @@ html {
 
 .nav3:hover {
   color: white;
-  transform: scale(1.5) skew(20deg);
+  transform: scale(1.5);
 }
 
 .parallax {
@@ -93,7 +74,7 @@ html {
   display: flex;
   width: 25%;
   padding-top: 5%;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   font-size: 48px;
   color: white;
   line-height: 95%;
@@ -112,6 +93,18 @@ html {
 
 .projectImg{
   border-radius: 5%;
+  filter: grayscale(100%);
+}
+
+.projectImg:hover{
+  filter: grayscale(0%);
+  filter: gray;
+  filter: none;
+  transition: 0.75s ease;
+}
+
+.projectTitle {
+  align-self: center;
 }
 
 .skills {
@@ -136,13 +129,11 @@ html {
 
 .social{
   width: 50px;
+  background-color: rgba(255, 255, 255, 0.473);
+  border-radius: 25%;
+  margin: 25px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   min-height: 100vh;
