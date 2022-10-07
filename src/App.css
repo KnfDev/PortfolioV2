@@ -1,10 +1,100 @@
-.App {
-  text-align: center;
+html {
+  background-color: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  background-color: #19202b;
+}
+
+.navbar{
+  transform: skew(-20deg);
+  display: flex;
+  padding: 30px 0;
+  align-content: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to right, #19202b, #19202b, #19202b,#19202b, #64646c, #19202b, #19202b, #19202b, #19202b, #64646c,#19202b, #19202b, #19202b, #19202b);
+  height: 45px;
+  font-size: 18px;
+  display: flex;
+}
+
+.navbar > *{
+  transform: skew(20deg);
+}
+
+.nav1{
+  text-decoration: none;
+  color: #b3b3b8;
+  transition: all .2s ease-in-out; 
+}
+.nav1:hover{
+  color: white;
+  transform: scale(1.5) skew(20deg); 
+}
+
+.nav2{
+  text-decoration: none;
+  color: #b3b3b8;
+  transition: all .2s ease-in-out; 
+}
+
+.nav2:hover{
+  color: white;
+  transform: scale(1.5) skew(20deg); 
+}
+
+.nav3{
+  text-decoration: none;
+  color: #b3b3b8;
+  transition: all .2s ease-in-out; 
+}
+
+.nav3:hover{
+  color: white;
+  transform: scale(1.5) skew(20deg); 
+}
+
+.parallax {
+  background-image: url("/src/images/Header.png");
+  height: 1000px;
+  min-width: 100%;
+  align-content: center;
+  background-attachment: fixed;
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.greeting {
+  display: flex;
+  width: 25%;
+  padding-top: 5%;
+  margin-left: 10%;
+  font-size: 48px;
+  color: white;
+  line-height: 95%;
+}
+
+
+.skills{
+  justify-content: space-evenly;
+  margin: 100px 50px;
+  background-color: #64646c;
+  border-radius: 25px;
+}
+
+.skill{
+  background-color: white;
+  border: .1vw solid #64646c;
+  width: 100px;
+  margin: 50px 0;
+  border-radius: 50%;
+  transition: all .2s ease-in-out; 
+}
+.skill:hover{
+  box-shadow: 0px 5px 20px 5px white;
+  transform: scale(1.15);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,7 +104,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +113,23 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and ( max-width: 795px ){
+  .greeting {
+    font-size: 36px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and ( max-width: 600px ){
+  .greeting {
+    font-size: 24px;
   }
+}
+@media screen and ( max-width: 400px ){
+  .greeting {
+    font-size: 18px;
+  }
+  .skill{
+    width: 50px;
+  }
+
 }
