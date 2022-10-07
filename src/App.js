@@ -8,24 +8,24 @@ function App() {
   return (
     <div className="container-fluid">
       <div className="expand">
-        <div className="row navbar">
-          <div className="col-3 nav1">
-            <a className="nav1" href={Resume}>
-              Resume
-            </a>
-          </div>
-          <div className="col-3 nav2">
-            <a className="nav1" href="#skills">
-              Skills
-            </a>
-          </div>
-          <div className="col-3 nav3">
-            <a className="nav1" href="">
-              Contact
-            </a>
-          </div>
-        </div>
         <div className="parallax">
+          <div className="row navbar">
+            <div className="col-3 nav1">
+              <a className="nav1" href={Resume}>
+                Resume
+              </a>
+            </div>
+            <div className="col-3 nav2">
+              <a className="nav1" href="#skills">
+                Skills
+              </a>
+            </div>
+            <div className="col-3 nav3">
+              <a className="nav1" href="">
+                Contact
+              </a>
+            </div>
+          </div>
           <span className="greeting">
             <span>Aloha I'm Kenneth & I'm a Full Stack Engineer</span>
           </span>
@@ -33,28 +33,134 @@ function App() {
       </div>
       <header className="App-header">
         <div className="row project1">
-          <img
-            className="col col-sm col-md col-lg-7 col-xl-7 projectImg"
-            src={LeagueTrack}
-            alt=""
-          />
-          <p className="col projectTitle">League of Legends Stat Clone</p>
+          <div className="col-12 col-sm-12 col-md-9 col-lg-7 col-xl-7">
+            <img className="projectImg" src={LeagueTrack} alt="" />
+          </div>
+          <div className="col-12 col-sm-12 col-md-3 col-lg-5 col-xl-5 projectTitle">
+            <a href="https://github.com/KnfDev/riot-stats-clone">
+              <h3>League of Legends Stat Clone</h3>
+              <div className="projectDesc">
+                <p>
+                  Clone of U.GG or op.GG type stat trackers.
+                  <br />
+                  Express proxy server interfaces with Riot API to make get
+                  requests for player and match information, All champion and
+                  item Icons also pulled from Riot API.
+                </p>
+              </div>
+              <div className="row spacer">
+                <img
+                  className="col-6 col-sm-6 col-m-6 projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt=""
+                />
+                <img
+                  className="col-6 col-sm-6 col-m-6 projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt=""
+                />
+                <img
+                  className="col-6 col-sm-6 col-m-6 projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                  alt=""
+                />
+                <img
+                  className="col-6 col-sm-6 col-m-6 projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt=""
+                />
+              </div>
+            </a>
+          </div>
         </div>
         <div className="row project2">
-          <img
-            className="col col-sm col-md col-lg-7 col-xl-7 projectImg"
-            src={Rest}
-            alt=""
-          />
-          <p className="col projectTitle">Restaurant Management App</p>
+          <div className="col-12 col-sm-12 col-md-9 col-lg-7 col-xl-7">
+            <img className=" projectImg" src={Rest} alt="" />
+          </div>
+          <div className="col-12 col-sm-12 col-md-3 col-lg-5 col-xl-5 projectTitle">
+            <a href="https://knf-restaurant-client.herokuapp.com/dashboard">
+              <h3>Restaurant Management App</h3>
+              <div className="projectDesc">
+                <p>
+                  A dynamic Full-Stack project with a Front-end UI built on
+                  react that can make GET, POST, PUT, DELETE requests to a
+                  PostgreSQL Database through a Back-end built with Knex and
+                  Express.
+                </p>
+                </div>
+                <div className="row spacer">
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt=""
+                  />
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt=""
+                  />
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt=""
+                  />
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                    alt=""
+                  />
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                    alt=""
+                  />
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt=""
+                  />
+                </div>
+            </a>
+          </div>
         </div>
-        <div className="row project3">
-          <img
-            className="col col-sm col-md col-lg-7 col-xl-7 projectImg"
-            src={Study}
-            alt=""
-          />
-          <p className="col projectTitle">Flashcard Study App</p>
+        <div className="row project1">
+          <div className="col-12 col-sm-12 col-md-9 col-lg-7 col-xl-7">
+            <img className="projectImg" src={Study} alt="" />
+          </div>
+          <div className="col-12 col-sm-12 col-md-3 col-lg-5 col-xl-5 projectTitle">
+            <a href="https://github.com/KnfDev/Study-Tool-Application">
+              <h3>Flashcard Study App</h3>
+              <div className="projectDesc">
+                <p>
+                  Uses local API to make GET, PUT, POST, DELETE for Cards and
+                  Deck information, All Cards and Decks stored on a local Json
+                  file
+                </p>
+                  </div>
+                <div className="row spacer">
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt=""
+                  />
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt=""
+                  />
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                    alt=""
+                  />
+                  <img
+                    className="projectSkill"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt=""
+                  />
+                </div>
+            </a>
+          </div>
         </div>
       </header>
 
