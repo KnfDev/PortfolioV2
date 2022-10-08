@@ -307,7 +307,7 @@ button:hover {
     display: block;
   }
   .parallax {
-    background-repeat: repeat;
+    background-position: sticky;
     background-size: contain;
   }
 }
