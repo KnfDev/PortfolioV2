@@ -3,6 +3,7 @@ import Resume from "./images/Resume.pdf";
 import LeagueTrack from "./images/LeagueTrack.png";
 import Rest from "./images/RestaurantLanding.png";
 import Study from "./images/Study.png";
+import Photo from "./images/Photo.png"
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <div className="parallax">
           <div className="row navbar">
             <div className="col-3 nav1">
-              <a className="nav1" href={Resume}>
+              <a className="nav1" href={Resume} target="_blank" rel="noreferrer noopener">
                 Resume
               </a>
             </div>
@@ -21,7 +22,7 @@ function App() {
               </a>
             </div>
             <div className="col-3 nav3">
-              <a className="nav1" href="">
+              <a className="nav1" href="#contact">
                 Contact
               </a>
             </div>
@@ -32,9 +33,12 @@ function App() {
         </div>
       </div>
       <header className="App-header">
+        <div className="projectSection">
+        <h2>Projects</h2>
+        </div>
         <div className="row project1">
           <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
-            <a href="https://github.com/KnfDev/riot-stats-clone">
+            <a href="https://github.com/KnfDev/riot-stats-clone" target="_blank" rel="noreferrer noopener">
               <img className="projectImg" src={LeagueTrack} alt="" />
             </a>
           </div>
@@ -49,10 +53,10 @@ function App() {
                 Icons also pulled from Riot API. API key is temporary so needs
                 to be updated.
               </p>
-              <a href="https://github.com/KnfDev/riot-stats-clone">
+              <a href="https://github.com/KnfDev/riot-stats-clone" target="_blank" rel="noreferrer noopener">
                 <button>Github</button>
               </a>
-              <button href="https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg">Demo</button>
+              <button href="https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg" target="_blank" rel="noreferrer noopener">Demo</button>
               <div className="row spacer">
                 <img
                   className="col-6 col-sm-6 col-m-6 projectSkill"
@@ -91,10 +95,10 @@ function App() {
                 that can make GET, POST, PUT, DELETE requests to a PostgreSQL
                 Database through a Back-end built with Knex and Express.
               </p>
-              <a href="https://github.com/KnfDev/Restaurant-reservation-knf">
+              <a href="https://github.com/KnfDev/Restaurant-reservation-knf" target="_blank" rel="noreferrer noopener">
                 <button >Github</button>
                 </a>
-                <a href="https://knf-restaurant-client.herokuapp.com/dashboard">
+                <a href="https://knf-restaurant-client.herokuapp.com/dashboard" target="_blank" rel="noreferrer noopener">
               <button>Demo</button>
                 </a>
               <div className="row spacer">
@@ -144,10 +148,10 @@ function App() {
                 Uses local API to make GET, PUT, POST, DELETE for Cards and Deck
                 information, All Cards and Decks stored on a local Json file
               </p>
-              <a href="https://github.com/KnfDev/Study-Tool-Application">
+              <a href="https://github.com/KnfDev/Study-Tool-Application" target="_blank" rel="noreferrer noopener">
                 <button>Github</button>
               </a>
-              <a href="https://knfdevflashcard.vercel.app/">
+              <a href="https://knfdevflashcard.vercel.app/" target="_blank" rel="noreferrer noopener">
                 <button>Demo</button>
               </a>
               <div className="row spacer">
@@ -181,8 +185,20 @@ function App() {
           </div>
         </div>
       </header>
+      <div className="row parallax">
+        <div classname="photobox col-12 col-sm-12 col-md-12 col-l-6 col-xl-6">
+        <img className="me" src={Photo} alt=""/>
+        </div>
+        <div className="about col-12 col-sm-12 col-md-12 col-l-6 col-xl-6">
+          <p>Hi there,  I'm Kenneth from Hawaii very new to this but I hope you enjoyed my portfolio!</p>
+          <p>Made a huge decision at the age of 33 to exit my job of 5 years and begin my journey into Tech at the beginning of 2022</p>
+          <p>Definitely not the easiest choice I've ever made but I've been enjoying every moment of it!</p>
+          <p>Today I'm learning. Tomorrow I'll still be learning,  and I will continue to learn the rest of my life.</p>
+          <p>That's what being a software engineer means to me.</p>
+          <p className="quote">I can’t stand it to think my life is going so fast and I'm not really living it. — <span className="author">Ernest Hemmingway</span></p>
+        </div>
+      </div>
 
-      <div className="parallax"></div>
       <div id="skills" className="row">
         <div className="col-6 col-xl">
           <img
@@ -249,15 +265,20 @@ function App() {
           />
         </div>
       </div>
-      <div>
-        <a href="https://www.linkedin.com/in/kenneth-mai-software-engineer/">
+      <div id="email">
+          <a href="mailto:iamknf@gmail.com" target="_blank" rel="noreferrer noopener">
+            <p>E-mail</p>
+            </a>
+      </div>
+      <div id="contact">
+        <a href="https://www.linkedin.com/in/kenneth-mai-software-engineer/" target="_blank" rel="noreferrer noopener">
           <img
             className="social"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
             alt=""
           />
         </a>
-        <a href="https://github.com/KnfDev">
+        <a href="https://github.com/KnfDev" target="_blank" rel="noreferrer noopener">
           <img
             className="social"
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
