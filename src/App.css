@@ -307,6 +307,8 @@ button:hover {
     display: block;
   }
   .parallax {
+    background-image: url("/src/images/Mobile.png");
+    height: 50vh;
     background-position: sticky;
     background-size: contain;
   }
