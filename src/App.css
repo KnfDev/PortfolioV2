@@ -307,7 +307,7 @@ button:hover {
     display: block;
   }
   .parallax {
-    height: 100vh;
+    height: 25vh;
     background-size: contain;
   }
 }
