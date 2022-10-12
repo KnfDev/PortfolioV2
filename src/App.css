@@ -133,15 +133,16 @@ h2 {
 }
 
 .projectImg {
-  border-radius: 5%;
+  border-radius: 50px;
   filter: grayscale(100%);
+  border: solid 5px #64646c;
 }
 
 .projectImg:hover {
   filter: grayscale(0%);
   filter: gray;
   filter: none;
-  transition: 0.75s ease;
+  transition: all 500ms ease;
 }
 
 .projectImg {
@@ -331,9 +332,6 @@ button:hover {
   }
   .greeting h1{
     font-size: 4vw;
-  }
-  .projectImg{
-    
   }
   .projectDesc {
     font-size: 12px;
