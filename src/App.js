@@ -36,6 +36,58 @@ function App() {
         <div className="projectSection">
         <h2>Projects</h2>
         </div>
+        
+        <div className="row project2">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+            <img className="projectImg" src="https://i.imgur.com/xEA4sOj.jpeg" alt="" />
+          </div>
+          <div className="col-12 col-sm-12 col-md-11 col-lg-5 col-xl-5 projectTitle">
+            <div className="hide">Travel Companion Clone</div>
+            <div className="projectDesc">
+              <p>
+                A personal project I started to learn how to utilize Material UI, google-map-react and Googles Maps Javascript API, very slow going and a TON of googling but I love traveling so this is a fun project to work on!
+              </p>
+              <p>
+                Uses Googles Maps JavaScript API and RapidAPIs travel advisor API. Work in progress.
+              </p>
+              <a href="https://github.com/KnfDev/TravelCompanion" target="_blank" rel="noreferrer noopener">
+                <button >Github</button>
+                </a>
+                {/* <a href="https://knf-restaurant-client.herokuapp.com/dashboard" target="_blank" rel="noreferrer noopener"> */}
+              <button onClick={()=>window.alert("Currently back end not built yet demo unavailable")}>Demo</button>
+                {/* </a> */}
+              <div className="row spacer">
+                <img
+                  className="projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt=""
+                />
+                <img
+                  className="projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt=""
+                />
+                
+                <img
+                  className="projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                  alt=""
+                />
+                <img
+                  className="projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+                  alt=""
+                />
+                <img
+                  className="projectSkill"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="row project1">
           <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
             <a href="https://github.com/KnfDev/riot-stats-clone" target="_blank" rel="noreferrer noopener">
@@ -51,12 +103,15 @@ function App() {
                 Express proxy server interfaces with Riot API to make GET
                 requests for player and match information, All champion and item
                 Icons also pulled from Riot API. API key is temporary so needs
-                to be updated.
+                to be updated.  Work in progress.
               </p>
               <a href="https://github.com/KnfDev/riot-stats-clone" target="_blank" rel="noreferrer noopener">
                 <button>Github</button>
               </a>
-              <button href="https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg" target="_blank" rel="noreferrer noopener">Demo</button>
+              <button 
+              onClick={()=>window.confirm("Currently I don't have a permanent Riot API key, the temporary one only lasts 24hrs.  Click Ok to see an image of product")?window.open("https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg"):null}
+              href="https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg" target="_blank" rel="noreferrer noopener">
+                Demo</button>
               <div className="row spacer">
                 <img
                   className="col-6 col-sm-6 col-m-6 projectSkill"
@@ -136,7 +191,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="parallax h-200"></div>
+        {/* <div className="parallax h-200"></div> */}
         <div className="row project1">
           <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
             <img className="projectImg" src={Study} alt="" />

@@ -307,7 +307,7 @@ button:hover {
     display: block;
   }
   .parallax {
-    height: 25vh;
+    height: 100%;
     background-size: contain;
   }
 }
@@ -318,7 +318,7 @@ button:hover {
     font-size: 14px;
   }
   .greeting {
-    font-size: 4vh;
+    font-size: 2vh;
   }
   .projectDesc {
     font-size: 12px;
