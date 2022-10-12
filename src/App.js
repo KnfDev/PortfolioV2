@@ -28,7 +28,7 @@ function App() {
             </div>
           </div>
           <span className="greeting">
-            <span>Aloha I'm Kenneth & I'm a Full Stack Engineer</span>
+            <h1>Aloha I'm Kenneth & I'm a Full Stack Engineer</h1>
           </span>
         </div>
       </div>
@@ -38,7 +38,7 @@ function App() {
         </div>
         
         <div className="row project2">
-          <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
             <img className="projectImg" src="https://i.imgur.com/xEA4sOj.jpeg" alt="" />
           </div>
           <div className="col-12 col-sm-12 col-md-11 col-lg-5 col-xl-5 projectTitle">
@@ -53,7 +53,9 @@ function App() {
               <a href="https://github.com/KnfDev/TravelCompanion" target="_blank" rel="noreferrer noopener">
                 <button >Github</button>
                 </a>
-              <button onClick={()=>window.alert("Currently not deployed yet demo unavailable")}>Demo</button>
+              <button 
+              onClick={()=>window.confirm("Currently not deployed.  Click Ok to see an image of project")?window.open("https://i.imgur.com/xEA4sOj.jpeg"):null}
+              >Demo</button>
               <div className="row spacer">
                 <img
                   className="projectSkill"
@@ -87,7 +89,7 @@ function App() {
         </div>
 
         <div className="row project1">
-          <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
             <a href="https://github.com/KnfDev/riot-stats-clone" target="_blank" rel="noreferrer noopener">
               <img className="projectImg" src={LeagueTrack} alt="" />
             </a>
@@ -107,8 +109,7 @@ function App() {
                 <button>Github</button>
               </a>
               <button 
-              onClick={()=>window.confirm("Currently I don't have a permanent Riot API key, the temporary one only lasts 24hrs.  Click Ok to see an image of product")?window.open("https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg"):null}
-              href="https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg" target="_blank" rel="noreferrer noopener">
+              onClick={()=>window.confirm("Currently I don't have a permanent Riot API key, the temporary one only lasts 24hrs.  Click Ok to see an image of product")?window.open("https://user-images.githubusercontent.com/100451137/194014800-3b525002-785c-4465-a575-ae720d30b332.jpeg"):null}>
                 Demo</button>
               <div className="row spacer">
                 <img
@@ -137,7 +138,7 @@ function App() {
         </div>
         <div className="parallax h-200"></div>
         <div className="row project2">
-          <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
             <img className="projectImg" src={Rest} alt="" />
           </div>
           <div className="col-12 col-sm-12 col-md-11 col-lg-5 col-xl-5 projectTitle">
@@ -193,7 +194,7 @@ function App() {
         </div>
         {/* <div className="parallax h-200"></div> */}
         <div className="row project1">
-          <div className="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
             <img className="projectImg" src={Study} alt="" />
           </div>
           <div className="col-12 col-sm-12 col-md-11 col-lg-5 col-xl-5 projectTitle">

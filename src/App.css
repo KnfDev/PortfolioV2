@@ -86,13 +86,16 @@
 .greeting {
   display: flex;
   width: 25%;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Notable', sans-serif;
   padding-top: 5%;
   margin-left: 10%;
-  font-size: 7vh;
   color: white;
   line-height: 95%;
   text-shadow: -250px 50px 15px black;
+}
+
+.greeting h1 {
+  font-size: 6.5vh;
 }
 
 .projectSection {
@@ -306,19 +309,31 @@ button:hover {
     font-size: 16px;
     display: block;
   }
+  .navbar {
+    font-size: 12px;
+  }
+
+  .greeting{
+    margin-top: -25px;
+    font-size: 3
+  }
+
   .parallax {
     height: 100%;
     background-size: contain;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1080px) {
   .projectTitle {
     width: 90%;
     font-size: 14px;
   }
-  .greeting {
-    font-size: 2vh;
+  .greeting h1{
+    font-size: 4vw;
+  }
+  .projectImg{
+    
   }
   .projectDesc {
     font-size: 12px;
