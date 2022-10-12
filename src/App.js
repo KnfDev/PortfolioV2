@@ -53,9 +53,7 @@ function App() {
               <a href="https://github.com/KnfDev/TravelCompanion" target="_blank" rel="noreferrer noopener">
                 <button >Github</button>
                 </a>
-                {/* <a href="https://knf-restaurant-client.herokuapp.com/dashboard" target="_blank" rel="noreferrer noopener"> */}
-              <button onClick={()=>window.alert("Currently back end not built yet demo unavailable")}>Demo</button>
-                {/* </a> */}
+              <button onClick={()=>window.alert("Currently not deployed yet demo unavailable")}>Demo</button>
               <div className="row spacer">
                 <img
                   className="projectSkill"
@@ -154,7 +152,9 @@ function App() {
                 <button >Github</button>
                 </a>
                 <a href="https://knf-restaurant-client.herokuapp.com/dashboard" target="_blank" rel="noreferrer noopener">
-              <button>Demo</button>
+              <button 
+              onClick={()=>window.alert("Deployed front-end and back-end on Heroku free server, takes a moment to load if not visited after some time")
+              }>Demo</button>
                 </a>
               <div className="row spacer">
                 <img
