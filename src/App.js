@@ -207,8 +207,11 @@ function App() {
               <a href="https://github.com/KnfDev/Study-Tool-Application" target="_blank" rel="noreferrer noopener">
                 <button>Github</button>
               </a>
+              
               <a href="https://knfdevflashcard.vercel.app/" target="_blank" rel="noreferrer noopener">
-                <button>Demo</button>
+              <button 
+              onClick={()=>window.alert("Currently only front-end deployed, I do plan on building the back-end for this using a postgreSQL database")
+              }>Demo</button>
               </a>
               <div className="row spacer">
                 <img
