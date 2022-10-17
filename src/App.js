@@ -1,6 +1,6 @@
 import "./App.css";
 import Resume from "./images/Resume.pdf";
-import LeagueTrack from "./images/LeagueTrack.png";
+import LeagueTrack from "./images/LeagueTrack2.png";
 import Rest from "./images/RestaurantLanding.png";
 import Study from "./images/Study.png";
 import Photo from "./images/Photo.png"
@@ -50,6 +50,7 @@ function App() {
               <p>
                 Uses Googles Maps JavaScript API and RapidAPIs travel advisor API. Work in progress.
               </p>
+
               <a href="https://github.com/KnfDev/TravelCompanion" target="_blank" rel="noreferrer noopener">
                 <button >Github</button>
                 </a>
@@ -104,6 +105,9 @@ function App() {
                 requests for player and match information, All champion and item
                 Icons also pulled from Riot API. API key is temporary so needs
                 to be updated.  Work in progress.
+              </p>
+              <p>
+                Oct 12 2022 - Added bans and fixed alignments/sizing
               </p>
               <a href="https://github.com/KnfDev/riot-stats-clone" target="_blank" rel="noreferrer noopener">
                 <button>Github</button>
